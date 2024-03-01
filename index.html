@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Membuat Login Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" />
+    <style>
+      * {
+        font-family: "Open Sans", sans-serif;
+      }
+      .container {
+        text-align: center;
+        padding-top: 100px;
+        width: 300px;
+        height: 200px;
+        background-image: url(https://i.pinimg.com/originals/69/6e/9d/696e9dfa1a3936bcbbe12ff28144939d.jpg);
+        background-position: center;
+        background-size: cover;
+        color: rgb(255, 255, 255);
+        border-radius: 10px;
+        text-shadow: 2px 2px 2px #3a3a3a;
+      }
+      .warp {
+        margin: auto;
+        width: 300px;
+      }
+      .login {
+        margin-bottom: 20px;
+      }
+      .form-group {
+        font-weight: bold;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        gap: 5px;
+      }
+      .form-group input {
+        border-radius: 3px;
+      }
+      .mybtn {
+        width: 300px;
+        height: 50px;
+        background-color: rgb(125, 84, 76);
+        border-radius: 10px;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="warp">
+      <div class="container">
+        <h1>Login Page</h1>
+        <p>Masukkan ID dan Password anda</p>
+      </div>
+      <div class="login">
+        <div class="form-group">
+          <label for="id">ID: </label>
+          <input type="text" id="id" placeholder="Masukkan ID" />
+        </div>
+        <div class="form-group">
+          <label for="pass">Password:</label>
+          <input type="password" id="pass" placeholder="Masukkan Password" />
+        </div>
+      </div>
+      <button class="mybtn">Login</button>
+    </div>
+  </body>
+</html>
